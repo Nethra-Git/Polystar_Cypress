@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-07T17:27:46.723Z",
+    "end": "2021-06-07T17:28:10.362Z",
+    "duration": 23639,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "51c2343d-bedd-4912-9ac4-0ee5a40ff85d",
+      "title": "",
+      "fullFile": "cypress/integration/TC05-cy-whatsnew-spec.js",
+      "file": "cypress/integration/TC05-cy-whatsnew-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+          "title": "to check subscribe newsletter function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "users can subscribe newsletter on page",
+              "fullTitle": "to check subscribe newsletter function users can subscribe newsletter on page",
+              "timedOut": null,
+              "duration": 12925,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.cypress.io/whats-new');\ncy.scrollTo('bottom');\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get(\"input[id='input-footer-email']\").type('qa001.polystar@gmail.com');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Thanks for submitting the form').should('be.visible');\ncy.reload();",
+              "err": {},
+              "uuid": "ffea25b8-7699-479c-bbf3-b5d3125a7186",
+              "parentUUID": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check for negative scenario with no email id",
+              "fullTitle": "to check subscribe newsletter function check for negative scenario with no email id",
+              "timedOut": null,
+              "duration": 1383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('button[type=\"submit\"]').dblclick();\ncy.contains('Please complete this required field').should('be.visible');",
+              "err": {},
+              "uuid": "ef9112b3-3501-49c5-92d1-3185dc960e49",
+              "parentUUID": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check for negative scenario with invalid email id",
+              "fullTitle": "to check subscribe newsletter function check for negative scenario with invalid email id",
+              "timedOut": null,
+              "duration": 1747,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.get('#onetrust-accept-btn-handler').click()\ncy.get(\"input[id='input-footer-email']\").type('qa001polystargmail.com');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Email must be formatted correctly.').should('be.visible');",
+              "err": {},
+              "uuid": "6123c038-d52b-49be-87b5-c431a825a6aa",
+              "parentUUID": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ffea25b8-7699-479c-bbf3-b5d3125a7186",
+            "ef9112b3-3501-49c5-92d1-3185dc960e49",
+            "6123c038-d52b-49be-87b5-c431a825a6aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16055,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

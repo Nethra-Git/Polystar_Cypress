@@ -1,0 +1,559 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 11,
+    "passes": 8,
+    "pending": 0,
+    "failures": 3,
+    "start": "2021-06-07T17:24:45.093Z",
+    "end": "2021-06-07T17:28:10.362Z",
+    "duration": 110929,
+    "testsRegistered": 11,
+    "passPercent": 72.72727272727273,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "81aa269e-8d91-4c0e-9205-92108eea3637",
+      "title": "",
+      "fullFile": "cypress/integration/l4-automate-spec.js",
+      "file": "cypress/integration/l4-automate-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7583cb2c-49d7-4356-b846-1c83f6162e57",
+          "title": "todo actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login after entering email and password",
+              "fullTitle": "todo actions should login after entering email and password",
+              "timedOut": null,
+              "duration": 3305,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.linkedin.com/');\ncy.get('[action-type=\"ACCEPT\"]').click(); //cy.contains('Sign in').click()\ncy.get('.nav__button-secondary').click(); //cy.get('#session_key').type('qa001.polystar@gmail.com')       \n//cy.get('#session_password').type('Test123!')\n//cy.get('.sign-in-form__submit-button').click()\n//cy.contains('Sign in').click()\ncy.get(\"input[id='username']\").clear().type(\"qa001.polystar@gmail.com\");\ncy.get(\"input[id='password']\").clear().type(\"Test123!\");\ncy.get('.btn__primary--large').click();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at Object._.Rc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:494:137)\n    at /_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:713:26\n    at xe.<anonymous> (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:653:166)\n    at kc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:472:207)\n    at xe._.k.dispatchEvent (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:470:349)\n    at re (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:562:212)\n    at ve (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:564:247)\n    at xe._.k.yc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:371)\n    at xe._.k.Lb (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:346)\n    at XMLHttpRequest.eval (eval at makeContentWindowListener (https://www.linkedin.com/__cypress/runner/cypress_runner.js:154778:10), <anonymous>:4:29)",
+                "diff": null
+              },
+              "uuid": "46f8d20e-477b-4227-96e1-5027c8f49194",
+              "parentUUID": "7583cb2c-49d7-4356-b846-1c83f6162e57",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should logout from the page",
+              "fullTitle": "todo actions should logout from the page",
+              "timedOut": null,
+              "duration": 8453,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//cy.contains('Sign in').click()\ncy.get('#ember32').click();\ncy.contains('Sign Out').should('be.visible').click();\ncy.contains('Sign in').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ember32`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ember32`, but never found it.\n    at Context.eval (https://www.linkedin.com/__cypress/tests?p=cypress/integration/l4-automate-spec.js:116:8)",
+                "diff": null
+              },
+              "uuid": "4bb14964-207f-4e61-bfbf-c0796d984fde",
+              "parentUUID": "7583cb2c-49d7-4356-b846-1c83f6162e57",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "46f8d20e-477b-4227-96e1-5027c8f49194",
+            "4bb14964-207f-4e61-bfbf-c0796d984fde"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11758,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7dc17bba-fa84-4711-81d1-cf938d221467",
+      "title": "",
+      "fullFile": "cypress/integration/sample-spec.js",
+      "file": "cypress/integration/sample-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8029aa21-ed9f-42de-8a59-7a5e4ca0d88a",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login",
+              "fullTitle": "Actions login",
+              "timedOut": null,
+              "duration": 3800,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(mainPage.signinBtn).click();\ncy.get(loginPage.emailOrPhoneInput).type(Cypress.env('user'));\ncy.get(loginPage.passwordInput).type(Cypress.env('password'));\ncy.get(loginPage.loginBtn).click();\ncy.get(homePage.header.searchInput).type(`${nameToSearch}{enter}`);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at Object._.Rc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:494:137)\n    at /_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:713:26\n    at xe.<anonymous> (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:653:166)\n    at kc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:472:207)\n    at xe._.k.dispatchEvent (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:470:349)\n    at re (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:562:212)\n    at ve (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:564:247)\n    at xe._.k.yc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:371)\n    at xe._.k.Lb (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:346)\n    at XMLHttpRequest.eval (eval at makeContentWindowListener (https://www.linkedin.com/__cypress/runner/cypress_runner.js:154778:10), <anonymous>:4:29)",
+                "diff": null
+              },
+              "uuid": "84960947-565a-4595-a61e-1263fdd90b0e",
+              "parentUUID": "8029aa21-ed9f-42de-8a59-7a5e4ca0d88a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "84960947-565a-4595-a61e-1263fdd90b0e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3800,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0a58a815-c44e-4dae-b1c3-86220fab7a47",
+      "title": "",
+      "fullFile": "cypress/integration/TC01-changelanguage-spec.js",
+      "file": "cypress/integration/TC01-changelanguage-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ee923b4-0fa6-48c1-b444-3227e7fed78f",
+          "title": "to change language cookie",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should navigate to the linkedin page",
+              "fullTitle": "to change language cookie should navigate to the linkedin page",
+              "timedOut": null,
+              "duration": 1753,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.linkedin.com/');\ncy.contains('Logga in').should('be.visible');",
+              "err": {},
+              "uuid": "92363ad6-c8a1-45e3-90f2-d661d4ccd814",
+              "parentUUID": "3ee923b4-0fa6-48c1-b444-3227e7fed78f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "92363ad6-c8a1-45e3-90f2-d661d4ccd814"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1753,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a1de527a-fb1d-428d-8c42-fdb00bb080e5",
+      "title": "",
+      "fullFile": "cypress/integration/TC02-login-spec.js",
+      "file": "cypress/integration/TC02-login-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d76e7645-b3eb-4b8b-9f47-e5cdeb9cb3cc",
+          "title": "Todo actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login",
+              "fullTitle": "Todo actions should login",
+              "timedOut": null,
+              "duration": 19250,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.login(emailAddress, \"Test123!{enter}\");",
+              "err": {},
+              "uuid": "6611b8e6-5d0c-4741-8c0b-4d5f2b1222b2",
+              "parentUUID": "d76e7645-b3eb-4b8b-9f47-e5cdeb9cb3cc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should logout",
+              "fullTitle": "Todo actions should logout",
+              "timedOut": null,
+              "duration": 3070,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.logout();",
+              "err": {},
+              "uuid": "e6d88a0d-7732-4a7b-99e8-64d181f849d5",
+              "parentUUID": "d76e7645-b3eb-4b8b-9f47-e5cdeb9cb3cc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6611b8e6-5d0c-4741-8c0b-4d5f2b1222b2",
+            "e6d88a0d-7732-4a7b-99e8-64d181f849d5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22320,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "04b2a414-f4d4-4426-95bf-7cd7f4e20e0a",
+      "title": "",
+      "fullFile": "cypress/integration/TC03-Jobsearch-spec.js",
+      "file": "cypress/integration/TC03-Jobsearch-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e86bcbd-1a45-4e5c-9500-a397b7cec2c2",
+          "title": "Todo Job page and messaging actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "96b558f5-0bab-4ec6-8e4f-884d358930af",
+              "title": "when we want to run Job search",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "To do Job page actions",
+                  "fullTitle": "Todo Job page and messaging actions when we want to run Job search To do Job page actions",
+                  "timedOut": null,
+                  "duration": 33633,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('https://www.linkedin.com/jobs');\ncy.get('[action-type=\"ACCEPT\"]').click();\ncy.get('.nav__button-secondary').click();\ncy.getCookies();\nloginPage.login(emailAddress, \"Test123!{enter}\"); // To minimize mesage window\n//cy.get('.msg-overlay-bubble-header').click()\n//cy.get('.global-nav__primary-items>li').eq(2).click()\ncy.get('.jobs-search-box__input-icon.jobs-search-box__keywords-label').type('Tester');\ncy.get('.jobs-search-box__input.jobs-search-box__input--location').clear().type('Stockholm{enter}');\ncy.get('.jobs-search-results-list__title-heading').contains('Tester in Stockholm').should('be.visible');\ncy.wait(2000);\ncy.get('.global-nav__primary-items>li').eq(0).click();\ncy.get('.global-nav__primary-items>li').eq(3).click(); //> .scrollable\n//cy.get('.msg-connections-typeahead__top-fixed-section')\n//.select('Tobias Karlsson', { force: true })\ncy.get('.msg-form__contenteditable').type('Hello, Test message 1?');\ncy.get('.msg-form__send-button').click({\n  force: true\n});",
+                  "err": {},
+                  "uuid": "9e6dfc81-2e2d-416f-8952-6d7e33cc920a",
+                  "parentUUID": "96b558f5-0bab-4ec6-8e4f-884d358930af",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9e6dfc81-2e2d-416f-8952-6d7e33cc920a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 33633,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "807f270b-88d7-4f91-bb44-f277c4918fea",
+      "title": "",
+      "fullFile": "cypress/integration/TC04-cy-features-spec.js",
+      "file": "cypress/integration/TC04-cy-features-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9b4ac7e5-e9da-40bf-b5eb-4a267a41549e",
+          "title": "scroll section by section feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should scroll section by section",
+              "fullTitle": "scroll section by section feature should scroll section by section",
+              "timedOut": null,
+              "duration": 21610,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.cypress.io/features');\ncy.get('#onetrust-accept-btn-handler').click(); //cy.get(':nth-child(1) > .col-lg-5 > h3').scrollIntoView().should('be.visible')\ncy.contains('Setting up tests').scrollIntoView().should('be.visible');\ncy.wait(3000);\ncy.get(':nth-child(2) > .col-lg-5 > h3').scrollIntoView();\ncy.wait(3000);\ncy.get(':nth-child(3) > .col-lg-5 > h3').scrollIntoView().should('be.visible');\ncy.wait(3000);\ncy.get('.mb-0 > .col-lg-5 > h3').scrollIntoView();\ncy.wait(3000);\ncy.contains('Get Started').scrollIntoView().should('be.visible');\ncy.wait(4000);",
+              "err": {},
+              "uuid": "b908fe46-b07e-4b02-b437-a7efbd425e1e",
+              "parentUUID": "9b4ac7e5-e9da-40bf-b5eb-4a267a41549e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b908fe46-b07e-4b02-b437-a7efbd425e1e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21610,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "51c2343d-bedd-4912-9ac4-0ee5a40ff85d",
+      "title": "",
+      "fullFile": "cypress/integration/TC05-cy-whatsnew-spec.js",
+      "file": "cypress/integration/TC05-cy-whatsnew-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+          "title": "to check subscribe newsletter function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "users can subscribe newsletter on page",
+              "fullTitle": "to check subscribe newsletter function users can subscribe newsletter on page",
+              "timedOut": null,
+              "duration": 12925,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.cypress.io/whats-new');\ncy.scrollTo('bottom');\ncy.get('#onetrust-accept-btn-handler').click();\ncy.get(\"input[id='input-footer-email']\").type('qa001.polystar@gmail.com');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Thanks for submitting the form').should('be.visible');\ncy.reload();",
+              "err": {},
+              "uuid": "ffea25b8-7699-479c-bbf3-b5d3125a7186",
+              "parentUUID": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check for negative scenario with no email id",
+              "fullTitle": "to check subscribe newsletter function check for negative scenario with no email id",
+              "timedOut": null,
+              "duration": 1383,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('button[type=\"submit\"]').dblclick();\ncy.contains('Please complete this required field').should('be.visible');",
+              "err": {},
+              "uuid": "ef9112b3-3501-49c5-92d1-3185dc960e49",
+              "parentUUID": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check for negative scenario with invalid email id",
+              "fullTitle": "to check subscribe newsletter function check for negative scenario with invalid email id",
+              "timedOut": null,
+              "duration": 1747,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.get('#onetrust-accept-btn-handler').click()\ncy.get(\"input[id='input-footer-email']\").type('qa001polystargmail.com');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Email must be formatted correctly.').should('be.visible');",
+              "err": {},
+              "uuid": "6123c038-d52b-49be-87b5-c431a825a6aa",
+              "parentUUID": "d7a5606c-f9f5-4645-a733-7de37d832fd4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ffea25b8-7699-479c-bbf3-b5d3125a7186",
+            "ef9112b3-3501-49c5-92d1-3185dc960e49",
+            "6123c038-d52b-49be-87b5-c431a825a6aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 16055,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

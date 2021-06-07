@@ -1,0 +1,19 @@
+
+{
+    "baseurl":"https://www.linkedin.com",
+    "chromeWebSecurity": false,
+    "env":{
+        "login":"https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin",
+        "url_cy_feature":"https://www.cypress.io/features",
+        "user":"qa001.polystar@gmail.com",
+        "password":"Test123!"
+    },
+
+    "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+    }    
+    
+}

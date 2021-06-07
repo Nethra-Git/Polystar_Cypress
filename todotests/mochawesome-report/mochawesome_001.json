@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-06-07T17:25:09.412Z",
+    "end": "2021-06-07T17:25:14.974Z",
+    "duration": 5562,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7dc17bba-fa84-4711-81d1-cf938d221467",
+      "title": "",
+      "fullFile": "cypress/integration/sample-spec.js",
+      "file": "cypress/integration/sample-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8029aa21-ed9f-42de-8a59-7a5e4ca0d88a",
+          "title": "Actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login",
+              "fullTitle": "Actions login",
+              "timedOut": null,
+              "duration": 3800,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(mainPage.signinBtn).click();\ncy.get(loginPage.emailOrPhoneInput).type(Cypress.env('user'));\ncy.get(loginPage.passwordInput).type(Cypress.env('password'));\ncy.get(loginPage.loginBtn).click();\ncy.get(homePage.header.searchInput).type(`${nameToSearch}{enter}`);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at Object._.Rc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:494:137)\n    at /_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:713:26\n    at xe.<anonymous> (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:653:166)\n    at kc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:472:207)\n    at xe._.k.dispatchEvent (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:470:349)\n    at re (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:562:212)\n    at ve (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:564:247)\n    at xe._.k.yc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:371)\n    at xe._.k.Lb (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:346)\n    at XMLHttpRequest.eval (eval at makeContentWindowListener (https://www.linkedin.com/__cypress/runner/cypress_runner.js:154778:10), <anonymous>:4:29)",
+                "diff": null
+              },
+              "uuid": "84960947-565a-4595-a61e-1263fdd90b0e",
+              "parentUUID": "8029aa21-ed9f-42de-8a59-7a5e4ca0d88a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "84960947-565a-4595-a61e-1263fdd90b0e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3800,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

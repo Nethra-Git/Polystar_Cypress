@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-06-07T17:24:45.093Z",
+    "end": "2021-06-07T17:24:58.809Z",
+    "duration": 13716,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "81aa269e-8d91-4c0e-9205-92108eea3637",
+      "title": "",
+      "fullFile": "cypress/integration/l4-automate-spec.js",
+      "file": "cypress/integration/l4-automate-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7583cb2c-49d7-4356-b846-1c83f6162e57",
+          "title": "todo actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should login after entering email and password",
+              "fullTitle": "todo actions should login after entering email and password",
+              "timedOut": null,
+              "duration": 3305,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.linkedin.com/');\ncy.get('[action-type=\"ACCEPT\"]').click(); //cy.contains('Sign in').click()\ncy.get('.nav__button-secondary').click(); //cy.get('#session_key').type('qa001.polystar@gmail.com')       \n//cy.get('#session_password').type('Test123!')\n//cy.get('.sign-in-form__submit-button').click()\n//cy.contains('Sign in').click()\ncy.get(\"input[id='username']\").clear().type(\"qa001.polystar@gmail.com\");\ncy.get(\"input[id='password']\").clear().type(\"Test123!\");\ncy.get('.btn__primary--large').click();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > A\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at Object._.Rc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:494:137)\n    at /_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:713:26\n    at xe.<anonymous> (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:653:166)\n    at kc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:472:207)\n    at xe._.k.dispatchEvent (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:470:349)\n    at re (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:562:212)\n    at ve (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:564:247)\n    at xe._.k.yc (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:371)\n    at xe._.k.Lb (/_/gsi/_/js/k=gsi.gsi.en.2f0d9inoam4.O/am=cg/d=1/ct=zgms/rs=AF0KOtW8IEF-TGSiZ5fJdPlfbYNG4zpbRg/m=gis_client_library:569:346)\n    at XMLHttpRequest.eval (eval at makeContentWindowListener (https://www.linkedin.com/__cypress/runner/cypress_runner.js:154778:10), <anonymous>:4:29)",
+                "diff": null
+              },
+              "uuid": "46f8d20e-477b-4227-96e1-5027c8f49194",
+              "parentUUID": "7583cb2c-49d7-4356-b846-1c83f6162e57",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should logout from the page",
+              "fullTitle": "todo actions should logout from the page",
+              "timedOut": null,
+              "duration": 8453,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//cy.contains('Sign in').click()\ncy.get('#ember32').click();\ncy.contains('Sign Out').should('be.visible').click();\ncy.contains('Sign in').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ember32`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#ember32`, but never found it.\n    at Context.eval (https://www.linkedin.com/__cypress/tests?p=cypress/integration/l4-automate-spec.js:116:8)",
+                "diff": null
+              },
+              "uuid": "4bb14964-207f-4e61-bfbf-c0796d984fde",
+              "parentUUID": "7583cb2c-49d7-4356-b846-1c83f6162e57",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "46f8d20e-477b-4227-96e1-5027c8f49194",
+            "4bb14964-207f-4e61-bfbf-c0796d984fde"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11758,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

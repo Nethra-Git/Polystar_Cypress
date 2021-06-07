@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-07T17:26:13.311Z",
+    "end": "2021-06-07T17:26:48.789Z",
+    "duration": 35478,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "04b2a414-f4d4-4426-95bf-7cd7f4e20e0a",
+      "title": "",
+      "fullFile": "cypress/integration/TC03-Jobsearch-spec.js",
+      "file": "cypress/integration/TC03-Jobsearch-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e86bcbd-1a45-4e5c-9500-a397b7cec2c2",
+          "title": "Todo Job page and messaging actions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "96b558f5-0bab-4ec6-8e4f-884d358930af",
+              "title": "when we want to run Job search",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "To do Job page actions",
+                  "fullTitle": "Todo Job page and messaging actions when we want to run Job search To do Job page actions",
+                  "timedOut": null,
+                  "duration": 33633,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit('https://www.linkedin.com/jobs');\ncy.get('[action-type=\"ACCEPT\"]').click();\ncy.get('.nav__button-secondary').click();\ncy.getCookies();\nloginPage.login(emailAddress, \"Test123!{enter}\"); // To minimize mesage window\n//cy.get('.msg-overlay-bubble-header').click()\n//cy.get('.global-nav__primary-items>li').eq(2).click()\ncy.get('.jobs-search-box__input-icon.jobs-search-box__keywords-label').type('Tester');\ncy.get('.jobs-search-box__input.jobs-search-box__input--location').clear().type('Stockholm{enter}');\ncy.get('.jobs-search-results-list__title-heading').contains('Tester in Stockholm').should('be.visible');\ncy.wait(2000);\ncy.get('.global-nav__primary-items>li').eq(0).click();\ncy.get('.global-nav__primary-items>li').eq(3).click(); //> .scrollable\n//cy.get('.msg-connections-typeahead__top-fixed-section')\n//.select('Tobias Karlsson', { force: true })\ncy.get('.msg-form__contenteditable').type('Hello, Test message 1?');\ncy.get('.msg-form__send-button').click({\n  force: true\n});",
+                  "err": {},
+                  "uuid": "9e6dfc81-2e2d-416f-8952-6d7e33cc920a",
+                  "parentUUID": "96b558f5-0bab-4ec6-8e4f-884d358930af",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9e6dfc81-2e2d-416f-8952-6d7e33cc920a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 33633,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
