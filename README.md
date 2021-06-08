@@ -2,8 +2,8 @@
 
 ## Clone this repo...
 
-- ...by running `git clone git@github.com:mapproject/business-tool.git`
-- ...or by running `git clone https://github.com/mapproject/business-tool.git`
+
+- ...by running `git clone https://github.com/Nethra-Git/Polystar_Cypress.git`
 
 ##Installing Cypress using below command
 
